@@ -10,10 +10,13 @@
 		E1798C3F286D4B71009985F8 /* myAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C3E286D4B71009985F8 /* myAppApp.swift */; };
 		E1798C41286D4B71009985F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C40286D4B71009985F8 /* ContentView.swift */; };
 		E1798C43286D4B73009985F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1798C42286D4B73009985F8 /* Assets.xcassets */; };
-		E1798C46286D4B73009985F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1798C45286D4B73009985F8 /* Preview Assets.xcassets */; };
 		E1798C50286D4B73009985F8 /* myAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C4F286D4B73009985F8 /* myAppTests.swift */; };
 		E1798C5A286D4B73009985F8 /* myAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C59286D4B73009985F8 /* myAppUITests.swift */; };
 		E1798C5C286D4B73009985F8 /* myAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C5B286D4B73009985F8 /* myAppUITestsLaunchTests.swift */; };
+		E191096E2877C88D00AC4531 /* MapView in Frameworks */ = {isa = PBXBuildFile; productRef = E191096D2877C88D00AC4531 /* MapView */; };
+		E19109702877C88D00AC4531 /* MyLibrary2 in Frameworks */ = {isa = PBXBuildFile; productRef = E191096F2877C88D00AC4531 /* MyLibrary2 */; };
+		E19109722877C88D00AC4531 /* ReusableButton in Frameworks */ = {isa = PBXBuildFile; productRef = E19109712877C88D00AC4531 /* ReusableButton */; };
+		E19109742877C88D00AC4531 /* ReusableText in Frameworks */ = {isa = PBXBuildFile; productRef = E19109732877C88D00AC4531 /* ReusableText */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		E1798C3E286D4B71009985F8 /* myAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myAppApp.swift; sourceTree = "<group>"; };
 		E1798C40286D4B71009985F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1798C42286D4B73009985F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E1798C45286D4B73009985F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1798C4B286D4B73009985F8 /* myAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1798C4F286D4B73009985F8 /* myAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myAppTests.swift; sourceTree = "<group>"; };
 		E1798C55286D4B73009985F8 /* myAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19109742877C88D00AC4531 /* ReusableText in Frameworks */,
+				E191096E2877C88D00AC4531 /* MapView in Frameworks */,
+				E19109722877C88D00AC4531 /* ReusableButton in Frameworks */,
+				E19109702877C88D00AC4531 /* MyLibrary2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,13 +77,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E165D86A28727D00005FB752 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1798C32286D4B71009985F8 = {
 			isa = PBXGroup;
 			children = (
+				E1798C71286D4EA5009985F8 /* Packages */,
 				E1798C3D286D4B71009985F8 /* myApp */,
 				E1798C4E286D4B73009985F8 /* myAppTests */,
 				E1798C58286D4B73009985F8 /* myAppUITests */,
 				E1798C3C286D4B71009985F8 /* Products */,
+				E165D86A28727D00005FB752 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,17 +112,8 @@
 				E1798C3E286D4B71009985F8 /* myAppApp.swift */,
 				E1798C40286D4B71009985F8 /* ContentView.swift */,
 				E1798C42286D4B73009985F8 /* Assets.xcassets */,
-				E1798C44286D4B73009985F8 /* Preview Content */,
 			);
 			path = myApp;
-			sourceTree = "<group>";
-		};
-		E1798C44286D4B73009985F8 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E1798C45286D4B73009985F8 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		E1798C4E286D4B73009985F8 /* myAppTests */ = {
@@ -127,6 +133,13 @@
 			path = myAppUITests;
 			sourceTree = "<group>";
 		};
+		E1798C71286D4EA5009985F8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +156,12 @@
 			dependencies = (
 			);
 			name = myApp;
+			packageProductDependencies = (
+				E191096D2877C88D00AC4531 /* MapView */,
+				E191096F2877C88D00AC4531 /* MyLibrary2 */,
+				E19109712877C88D00AC4531 /* ReusableButton */,
+				E19109732877C88D00AC4531 /* ReusableText */,
+			);
 			productName = myApp;
 			productReference = E1798C3B286D4B71009985F8 /* myApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +234,9 @@
 				Base,
 			);
 			mainGroup = E1798C32286D4B71009985F8;
+			packageReferences = (
+				E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */,
+			);
 			productRefGroup = E1798C3C286D4B71009985F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,7 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1798C46286D4B73009985F8 /* Preview Assets.xcassets in Resources */,
 				E1798C43286D4B73009985F8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +598,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grisMorales/MyLibraryTest";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E191096D2877C88D00AC4531 /* MapView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			productName = MapView;
+		};
+		E191096F2877C88D00AC4531 /* MyLibrary2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			productName = MyLibrary2;
+		};
+		E19109712877C88D00AC4531 /* ReusableButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			productName = ReusableButton;
+		};
+		E19109732877C88D00AC4531 /* ReusableText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			productName = ReusableText;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1798C33286D4B71009985F8 /* Project object */;
 }
