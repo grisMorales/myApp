@@ -9,14 +9,21 @@ import SwiftUI
 import ReusableButton
 import ReusableText
 import MapView
+import LibraryFont
 
 
 struct ContentView: View {
-    public init() {}
+     init() {
+        LibraryFont.registerFonts()
+    }
      var body: some View {
-        ReusableButton()
+       /* ReusableButton()
         ReusableText()
-        MapView()
+        MapView()*/
+         Text("Hello DynaPuff-Regular").font(Font.custom("DynaPuff-Regular", size: 16))
+         Text("Hello Press-Regular").font(Font.custom("PressStart2P-Regular", size: 16))
+         Text("Hello VeganStylePersonalUse").font(Font.custom(dynaPuffFamily.regularDos.rawValue, size: 16))
+         Text("dynaPuffTitle1").font(.dynaPuffTitle1)
     }
 }
 

@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E066D96428AD57030072E5E7 /* LibraryFont in Frameworks */ = {isa = PBXBuildFile; productRef = E066D96328AD57030072E5E7 /* LibraryFont */; };
+		E066D96628AD57030072E5E7 /* MapView in Frameworks */ = {isa = PBXBuildFile; productRef = E066D96528AD57030072E5E7 /* MapView */; };
+		E066D96828AD57030072E5E7 /* MyLibrary2 in Frameworks */ = {isa = PBXBuildFile; productRef = E066D96728AD57030072E5E7 /* MyLibrary2 */; };
+		E066D96A28AD57030072E5E7 /* ReusableButton in Frameworks */ = {isa = PBXBuildFile; productRef = E066D96928AD57030072E5E7 /* ReusableButton */; };
+		E066D96C28AD57030072E5E7 /* ReusableText in Frameworks */ = {isa = PBXBuildFile; productRef = E066D96B28AD57030072E5E7 /* ReusableText */; };
+		E066D97028AD71880072E5E7 /* CustomFonts in Frameworks */ = {isa = PBXBuildFile; productRef = E066D96F28AD71880072E5E7 /* CustomFonts */; };
 		E1798C3F286D4B71009985F8 /* myAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C3E286D4B71009985F8 /* myAppApp.swift */; };
 		E1798C41286D4B71009985F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C40286D4B71009985F8 /* ContentView.swift */; };
 		E1798C43286D4B73009985F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1798C42286D4B73009985F8 /* Assets.xcassets */; };
 		E1798C50286D4B73009985F8 /* myAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C4F286D4B73009985F8 /* myAppTests.swift */; };
 		E1798C5A286D4B73009985F8 /* myAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C59286D4B73009985F8 /* myAppUITests.swift */; };
 		E1798C5C286D4B73009985F8 /* myAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1798C5B286D4B73009985F8 /* myAppUITestsLaunchTests.swift */; };
-		E191096E2877C88D00AC4531 /* MapView in Frameworks */ = {isa = PBXBuildFile; productRef = E191096D2877C88D00AC4531 /* MapView */; };
-		E19109702877C88D00AC4531 /* MyLibrary2 in Frameworks */ = {isa = PBXBuildFile; productRef = E191096F2877C88D00AC4531 /* MyLibrary2 */; };
-		E19109722877C88D00AC4531 /* ReusableButton in Frameworks */ = {isa = PBXBuildFile; productRef = E19109712877C88D00AC4531 /* ReusableButton */; };
-		E19109742877C88D00AC4531 /* ReusableText in Frameworks */ = {isa = PBXBuildFile; productRef = E19109732877C88D00AC4531 /* ReusableText */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +55,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19109742877C88D00AC4531 /* ReusableText in Frameworks */,
-				E191096E2877C88D00AC4531 /* MapView in Frameworks */,
-				E19109722877C88D00AC4531 /* ReusableButton in Frameworks */,
-				E19109702877C88D00AC4531 /* MyLibrary2 in Frameworks */,
+				E066D96628AD57030072E5E7 /* MapView in Frameworks */,
+				E066D96C28AD57030072E5E7 /* ReusableText in Frameworks */,
+				E066D96A28AD57030072E5E7 /* ReusableButton in Frameworks */,
+				E066D96828AD57030072E5E7 /* MyLibrary2 in Frameworks */,
+				E066D97028AD71880072E5E7 /* CustomFonts in Frameworks */,
+				E066D96428AD57030072E5E7 /* LibraryFont in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,10 +161,12 @@
 			);
 			name = myApp;
 			packageProductDependencies = (
-				E191096D2877C88D00AC4531 /* MapView */,
-				E191096F2877C88D00AC4531 /* MyLibrary2 */,
-				E19109712877C88D00AC4531 /* ReusableButton */,
-				E19109732877C88D00AC4531 /* ReusableText */,
+				E066D96328AD57030072E5E7 /* LibraryFont */,
+				E066D96528AD57030072E5E7 /* MapView */,
+				E066D96728AD57030072E5E7 /* MyLibrary2 */,
+				E066D96928AD57030072E5E7 /* ReusableButton */,
+				E066D96B28AD57030072E5E7 /* ReusableText */,
+				E066D96F28AD71880072E5E7 /* CustomFonts */,
 			);
 			productName = myApp;
 			productReference = E1798C3B286D4B71009985F8 /* myApp.app */;
@@ -235,7 +241,8 @@
 			);
 			mainGroup = E1798C32286D4B71009985F8;
 			packageReferences = (
-				E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */,
+				E066D96228AD57030072E5E7 /* XCRemoteSwiftPackageReference "MyLibraryTest" */,
+				E066D96E28AD71880072E5E7 /* XCRemoteSwiftPackageReference "CustomFonts" */,
 			);
 			productRefGroup = E1798C3C286D4B71009985F8 /* Products */;
 			projectDirPath = "";
@@ -600,9 +607,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */ = {
+		E066D96228AD57030072E5E7 /* XCRemoteSwiftPackageReference "MyLibraryTest" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/grisMorales/MyLibraryTest";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		E066D96E28AD71880072E5E7 /* XCRemoteSwiftPackageReference "CustomFonts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andrewmarmion/CustomFonts";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -611,25 +626,35 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E191096D2877C88D00AC4531 /* MapView */ = {
+		E066D96328AD57030072E5E7 /* LibraryFont */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			package = E066D96228AD57030072E5E7 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			productName = LibraryFont;
+		};
+		E066D96528AD57030072E5E7 /* MapView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E066D96228AD57030072E5E7 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
 			productName = MapView;
 		};
-		E191096F2877C88D00AC4531 /* MyLibrary2 */ = {
+		E066D96728AD57030072E5E7 /* MyLibrary2 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			package = E066D96228AD57030072E5E7 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
 			productName = MyLibrary2;
 		};
-		E19109712877C88D00AC4531 /* ReusableButton */ = {
+		E066D96928AD57030072E5E7 /* ReusableButton */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			package = E066D96228AD57030072E5E7 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
 			productName = ReusableButton;
 		};
-		E19109732877C88D00AC4531 /* ReusableText */ = {
+		E066D96B28AD57030072E5E7 /* ReusableText */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E191096C2877C88D00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			package = E066D96228AD57030072E5E7 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
 			productName = ReusableText;
+		};
+		E066D96F28AD71880072E5E7 /* CustomFonts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E066D96E28AD71880072E5E7 /* XCRemoteSwiftPackageReference "CustomFonts" */;
+			productName = CustomFonts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
