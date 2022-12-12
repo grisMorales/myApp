@@ -1,18 +1,21 @@
-# Aplicación Base 
+<h1>Base project using DLS library</h1>
 
-Ejemplo de app en SwiftUI consumiendo el package de la librería del DLS.
+Example of an app in SwiftUI consuming the DLS library package.
 
-****Recomendaciones:
+<h3>Recommendations:</h3>
+<ol>
+<li>Associate source code repository before downloading the app from the Preferences option:</li> 
+<li>Source Control/Git</li>
 
--Asociar repositorio de código fuente antes de la descarga del app desde la opción Preferences: -> Source Control/Git
+<li>When compiling the project in the app target, it is recommended to use a device with iOS 13 or higher.</li>
 
--Al realizar la compilación del proyecto en el target de la app se recomienda utilizar un dispositivo con iOS 13 o superior.
+<li>Consider having the latest Xcode update</li>
+</ol>
 
--Considerar tener la última actualización de Xcode
+<h3>Software installation:</h3>
+<ol>
+<li>Download the source code from the repository.</li>
+<li>Build the app and run it on the device or on a real device.</li>
+</ol>
 
-Instalación:
-
-1.-Descarga el código fuente del repositorio.
-2.-Compila la app y ejecuta en el dispositivo o en un dispotivio real.
-
-Enjoy coding.
+Enjoy coding :)
